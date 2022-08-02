@@ -44,3 +44,5 @@ function getCapricornWomen() {
 function clearScreen() {
     document.querySelector('.result').innerHTML = '';
 }
+
+const addToDom = element =>  parent.appendChild(element)

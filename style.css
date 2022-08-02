@@ -6,17 +6,23 @@
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
     background-color: aliceblue;
     justify-content: center;
+    align-items: center;
 }
 
 header {
     width: 100%;
     max-width: 80rem;
     margin: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
@@ -47,12 +53,13 @@ main {
 .result {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
 }
 
 .country {
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 48%;
     font-size: 1.5rem;
     padding: 0.5rem;
     padding-left: 2rem;
@@ -65,15 +72,20 @@ main {
     left: 5px;
     width: 8px;
     height: 8px;
-    border-radius: 50%;
+    border-radius: 48%;
     background-color: coral;
 }
 
 .card {
     display: flex;
-    width: 100%;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
     align-items: center;
     padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
 }
 
 .card__img {
