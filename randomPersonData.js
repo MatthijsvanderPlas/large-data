@@ -1482,8 +1482,8 @@ const randomPersonData = [
     photo: "https://randomuser.me/api/portraits/men/13.jpg",
   },
   {
-    name: "",
-    surname: "María Elena Carrillo",
+    name: "María Elena",
+    surname: "Carrillo",
     gender: "female",
     region: "Mexico",
     age: 26,
@@ -2736,8 +2736,8 @@ const randomPersonData = [
     photo: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    name: "",
-    surname: "Juan Antonio Jímenez",
+    name: "Juan Antonio",
+    surname: "Jímenez",
     gender: "male",
     region: "Mexico",
     age: 33,

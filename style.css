@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    max-width: 80rem;
+    margin: 1rem;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    margin: 0.25rem;
+    font-size: 1.3rem;
+    background: none;
+    border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    color: red;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+main {
+    width: 100%;
+    max-width: 80rem;
+    margin: 1rem;
+    max-height: 50%;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.country {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+}
+
+.country::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: coral;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card__img {
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.card__name {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.card__name p {
+    display: block;
+    width: 100%;
+}
+
+.card__name p:nth-child(2) {
+    font-size: 1.25rem;
+}
+
+.card__name p:nth-child(3) {
+    font-size: 1.25rem;
+}
+
+.card__name p:nth-child(4) {
+    font-size: 1.25rem;
+}
+
+.right {
+    width: min-content;
+    margin-left: auto;
+    margin-right: 1rem;
+}
